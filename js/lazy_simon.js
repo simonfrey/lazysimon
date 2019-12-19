@@ -3,7 +3,7 @@
 *
 *  Minimal effort 350 byte JavaScript library to lazy load all <img> on your website
 * 
-* License: MIT (https://lazy.simon-frey.eu/mit.txt)
+* License: MIT (https://github.com/simonfrey/lazysimon/blob/master/LICENSE)
 */
 o = new IntersectionObserver((a, s) => {
   a.forEach(e => {
