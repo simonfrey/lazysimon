@@ -17,12 +17,10 @@ d = document.querySelectorAll("img");
 for (i = d.length - 1; i >= 0; i--) {
   e = d[i];
   if (e.loading != undefined){
-    console.log("chrome loadin")
     e.loading = "lazy"
   }else{
   e.dataset.l = e.src;
-  e.src =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89xQAAscB1RY/sEQAAAAASUVORK5CYII=";
+  e.src = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' />";
   o.observe(e);
   }
 }
