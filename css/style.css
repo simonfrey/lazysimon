@@ -1,0 +1,59 @@
+html {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: 'Lucida Console', Monaco, monospace;
+    padding:1em;
+}
+a {
+    color:#f8f8f2;
+}
+
+body {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+
+}
+
+h1,
+h2,
+h3,h4 {
+    padding:0.2em;
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+h2{
+   background-color:#f8f8f2;
+   color:#272822;
+}
+h3 {
+    border:2px solid #f8f8f2;
+}
+
+h4 {
+    border:1px dotted #f8f8f2;
+}
+
+pre{
+    background-color:rgba(0,0,0,0.1);
+    padding:1em;
+}
+
+
+#testArea{
+    display: flex;
+    width: 100%;  
+    flex-wrap: wrap;
+}
+
+#testArea img{
+  flex:1;
+    margin:1em;
+    width:100%;
+    min-width: 100px;
+}
