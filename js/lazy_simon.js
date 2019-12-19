@@ -16,8 +16,13 @@ o = new IntersectionObserver((a, s) => {
 d = document.querySelectorAll("img");
 for (i = d.length - 1; i >= 0; i--) {
   e = d[i];
+  if (e.loading != undefined){
+    console.log("chrome loadin")
+    e.loading = "lazy"
+  }else{
   e.dataset.l = e.src;
   e.src =
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89xQAAscB1RY/sEQAAAAASUVORK5CYII=";
   o.observe(e);
+  }
 }
